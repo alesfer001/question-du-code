@@ -1,0 +1,772 @@
+// Généré à partir de questions.json (ne pas éditer à la main).
+window.QUESTIONS = [
+ {
+  "id": "q01",
+  "theme": "vitesse",
+  "question": "En agglomération, sans panneau particulier, quelle est la vitesse maximale autorisée ?",
+  "options": [
+   "30 km/h",
+   "50 km/h",
+   "70 km/h",
+   "90 km/h"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "La règle générale en agglomération est 50 km/h. Le 70 km/h n'existe que sur certaines sections décidées par arrêté, donc il ne vaut pas sans panneau.",
+  "source": {
+   "article": "R. 413-3",
+   "quote": "En agglomération, la vitesse des véhicules est limitée à 50 km/ h.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436430/2026-10-27"
+  }
+ },
+ {
+  "id": "q02",
+  "theme": "alcool et stupéfiants",
+  "question": "Tu as ton permis depuis un an. Tu conduis avec 0,30 g d'alcool par litre de sang. Est-ce une infraction ?",
+  "options": [
+   "Non, la limite est de 0,50 g par litre",
+   "Oui, c'est une contravention",
+   "Non, seul le délit à partir de 0,80 g compte"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Pendant le délai probatoire (trois ans après le permis, deux ans après une conduite accompagnée), le seuil est de 0,20 g par litre. Le 0,50 vaut pour les autres conducteurs, et le délit commence à 0,80.",
+  "source": {
+   "article": "R. 234-1",
+   "quote": "Une concentration d'alcool dans le sang égale ou supérieure à 0,20 gramme par litre",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000038954545/2026-10-27"
+  }
+ },
+ {
+  "id": "q03",
+  "theme": "vitesse",
+  "question": "Hors agglomération, sur une route ordinaire sans panneau particulier, quelle est la vitesse maximale ?",
+  "options": [
+   "70 km/h",
+   "80 km/h",
+   "90 km/h",
+   "110 km/h"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Sur les autres routes hors agglomération, la limite est 80 km/h. Le 90 km/h ne vaut que sur des sections signalées avec au moins deux voies dans le même sens, et le 110 km/h concerne les routes à deux chaussées séparées par un terre-plein.",
+  "source": {
+   "article": "R. 413-2",
+   "quote": "80 km/ h sur les autres routes. Toutefois, sur les sections de ces routes comportant au moins deux voies affectées à un même sens de circulation, la vitesse maximale est relevée à 90 km/ h sur ces seules voies.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000042240048/2026-10-27"
+  }
+ },
+ {
+  "id": "q04",
+  "theme": "ceinture et enfants",
+  "question": "Ton ami est passager à l'arrière. Son siège a une ceinture, mais il ne l'attache pas. Est-ce une infraction ?",
+  "options": [
+   "Non, seul le conducteur doit attacher sa ceinture",
+   "Oui, le passager doit aussi porter sa ceinture",
+   "Non, à l'arrière la ceinture est facultative"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Le texte oblige tout conducteur ou passager à porter une ceinture homologuée dès que son siège en est équipé. L'arrière n'est pas dispensé.",
+  "source": {
+   "article": "R. 412-1",
+   "quote": "En circulation, tout conducteur ou passager d'un véhicule à moteur doit porter une ceinture de sécurité homologuée",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000037411287/2026-10-27"
+  }
+ },
+ {
+  "id": "q05",
+  "theme": "priorités",
+  "question": "Deux routes se croisent, sans panneau ni feu. Qui passe en premier ?",
+  "options": [
+   "Celui qui vient de la gauche",
+   "Celui qui vient de la droite",
+   "Le plus rapide des deux"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Sans signalisation, le conducteur qui vient de la gauche doit céder le passage à celui qui vient de la droite. La vitesse ne donne aucune priorité.",
+  "source": {
+   "article": "R. 415-5",
+   "quote": "le conducteur venant par la gauche est tenu de céder le passage à l'autre conducteur, sauf dispositions différentes prévues au présent livre",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842244/2026-10-27"
+  }
+ },
+ {
+  "id": "q06",
+  "theme": "téléphone et attention",
+  "question": "Tu roules et tu tiens ton téléphone en main pour lire un message. Est-ce permis ?",
+  "options": [
+   "Oui, si le message est court",
+   "Non, l'usage d'un téléphone tenu en main en circulation est interdit"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Le texte interdit l'usage d'un téléphone tenu en main par le conducteur d'un véhicule en circulation, sans exception de durée. Un message court ne rend pas la pratique permise.",
+  "source": {
+   "article": "R. 412-6-1",
+   "quote": "L'usage d'un téléphone tenu en main par le conducteur d'un véhicule en circulation est interdit.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000041910422/2026-10-27"
+  }
+ },
+ {
+  "id": "q07",
+  "theme": "feux",
+  "question": "Un feu de signalisation rouge clignote. Que dois-tu faire ?",
+  "options": [
+   "Passer prudemment, puisqu'il clignote",
+   "T'arrêter comme devant un feu rouge fixe",
+   "Ralentir et passer si personne ne vient"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Un rouge clignotant impose l'arrêt absolu, comme un rouge fixe. Passer prudemment ou ralentir sans s'arrêter sont interdits par le texte.",
+  "source": {
+   "article": "R. 412-30",
+   "quote": "Tout conducteur doit marquer l'arrêt absolu devant un feu de signalisation rouge, fixe ou clignotant.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000039478725/2026-10-27"
+  }
+ },
+ {
+  "id": "q08",
+  "theme": "arrêt et stationnement",
+  "question": "Tu laisses ta voiture en double file et tu pars à pied déposer un colis. Comment le texte qualifie-t-il ce stationnement ?",
+  "options": [
+   "Il est autorisé si tes feux de détresse sont allumés",
+   "Il est considéré comme gênant",
+   "Il est autorisé pour moins de 5 minutes"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Le texte range le stationnement en double file parmi les cas gênants pour la circulation publique. Les exceptions visent les deux-roues et les engins de déplacement personnel, pas les voitures, et il ne prévoit ni durée ni tolérance avec les feux de détresse.",
+  "source": {
+   "article": "R. 417-10",
+   "quote": "En double file, sauf en ce qui concerne les engins de déplacement personnel, les cycles à deux roues, les cyclomoteurs à deux roues et les motocyclettes sans side-car",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551/2026-10-27"
+  }
+ },
+ {
+  "id": "q09",
+  "theme": "distances et dépassement",
+  "question": "Quand deux voitures se suivent, quelle distance de sécurité faut-il garder ?",
+  "options": [
+   "Une seconde",
+   "Au moins deux secondes",
+   "Environ 10 mètres, quelle que soit la vitesse"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "La distance correspond à au moins deux secondes de trajet, et elle augmente avec la vitesse. Dix mètres fixes seraient trop courts à vitesse élevée.",
+  "source": {
+   "article": "R. 412-12",
+   "quote": "Elle correspond à la distance parcourue par le véhicule pendant un délai d'au moins deux secondes.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000051682619/2026-10-27"
+  }
+ },
+ {
+  "id": "q10",
+  "theme": "permis et points",
+  "question": "Au moment où tu obtiens ton permis, combien de points as-tu ?",
+  "options": [
+   "12 points",
+   "6 points",
+   "3 points"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Le permis démarre à 6 points, la moitié du maximum de 12. Il gagne ensuite des points chaque année probatoire sans infraction avec retrait.",
+  "source": {
+   "article": "R. 223-1",
+   "quote": "A la date d'obtention du permis de conduire, celui-ci est affecté d'un nombre initial de six points.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000037302633/2026-10-27"
+  }
+ },
+ {
+  "id": "q11",
+  "theme": "alcool et stupéfiants",
+  "question": "Un conducteur a 0,80 g d'alcool par litre de sang, sans signe visible d'ivresse. Que risque-t-il ?",
+  "options": [
+   "Rien, car il n'est pas ivre",
+   "Une simple contravention",
+   "Un délit : 3 ans d'emprisonnement et 9 000 € d'amende"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Le délit existe même sans signe visible d'ivresse, dès 0,80 g par litre de sang. Ni le « rien » ni la simple contravention ne correspondent à ce taux.",
+  "source": {
+   "article": "L. 234-1",
+   "quote": "Même en l'absence de tout signe d'ivresse manifeste, le fait de conduire un véhicule sous l'empire d'un état alcoolique caractérisé par une concentration d'alcool dans le sang égale ou supérieure à 0,80 gramme par litre",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000054724895/2026-10-27"
+  }
+ },
+ {
+  "id": "q12",
+  "theme": "feux",
+  "question": "Tu es à l'arrêt en ville, la nuit. Peux-tu laisser tes feux de route allumés ?",
+  "options": [
+   "Oui, c'est plus visible",
+   "Non, les feux de route sont interdits à l'arrêt ou en stationnement",
+   "Oui, si la rue est vide"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Le texte interdit l'usage des feux de route à l'arrêt ou en stationnement. Être plus visible ou se trouver dans une rue vide ne change pas la règle.",
+  "source": {
+   "article": "R. 416-5",
+   "quote": "A l'arrêt ou en stationnement, l'usage des feux de route est interdit.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842261/2026-10-27"
+  }
+ },
+ {
+  "id": "q13",
+  "theme": "priorités",
+  "question": "Tu arrives à un rond-point et une voiture circule déjà dessus. Qui passe en premier ?",
+  "options": [
+   "Toi, car tu arrives par sa droite",
+   "La voiture qui circule déjà sur le rond-point",
+   "Celui qui roule le plus vite"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "En abordant un carrefour à sens giratoire, tu dois céder le passage aux usagers qui circulent sur l'anneau. La priorité à droite ne joue pas ici.",
+  "source": {
+   "article": "R. 415-10",
+   "quote": "de céder le passage aux usagers circulant sur la chaussée qui ceinture le carrefour à sens giratoire.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842250/2026-10-27"
+  }
+ },
+ {
+  "id": "q14",
+  "theme": "distances et dépassement",
+  "question": "Hors agglomération, un camion de plus de 3,5 tonnes suit un autre poids lourd à la même vitesse. Quelle distance minimum doit-il garder ?",
+  "options": [
+   "Deux secondes, comme pour une voiture",
+   "Au moins 50 mètres",
+   "Au moins 20 mètres"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Pour les véhicules de plus de 3,5 tonnes ou de plus de 7 mètres qui se suivent à la même vitesse hors agglomération, la distance est d'au moins 50 mètres. La règle des deux secondes ne suffit pas pour eux.",
+  "source": {
+   "article": "R. 412-12",
+   "quote": "la distance de sécurité mentionnée au I est d'au moins 50 mètres.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000051682619/2026-10-27"
+  }
+ },
+ {
+  "id": "q15",
+  "theme": "permis et points",
+  "question": "Pendant ton délai probatoire, tu commets une infraction qui retire 3 points. Qu'est-ce qui t'attend ?",
+  "options": [
+   "Rien, 3 points ne suffisent pas à une obligation",
+   "Suivre la formation spécifique dans un délai de 4 mois",
+   "Une suspension immédiate du permis"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Une infraction qui retire au moins 3 points pendant le délai probatoire oblige à suivre la formation spécifique dans les 4 mois. Ne pas le faire est une contravention.",
+  "source": {
+   "article": "R. 223-4",
+   "quote": "l'obligation de se soumettre à la formation spécifique mentionnée au quatrième alinéa de l'article L. 223-6 dans un délai de quatre mois",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000031823467/2026-10-27"
+  }
+ },
+ {
+  "id": "q16",
+  "theme": "téléphone et attention",
+  "question": "Tu roules avec un écouteur dans une oreille, le son est très bas. Est-ce permis ?",
+  "options": [
+   "Oui, si le son est très bas",
+   "Oui, tant que tu ne touches pas ton téléphone",
+   "Non, porter à l'oreille tout dispositif qui peut émettre du son est interdit"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Le texte interdit de porter à l'oreille, en circulation, tout dispositif susceptible d'émettre du son, même à faible volume ou sans toucher le téléphone. Seuls les appareils correcteurs de surdité sont exclus.",
+  "source": {
+   "article": "R. 412-6-1",
+   "quote": "Est également interdit le port à l'oreille, par le conducteur d'un véhicule en circulation, de tout dispositif susceptible d'émettre du son",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000041910422/2026-10-27"
+  }
+ },
+ {
+  "id": "q17",
+  "theme": "distances et dépassement",
+  "question": "Tu dépasses un vélo, un engin à deux roues, en ville. À quelle distance latérale minimum dois-tu passer ?",
+  "options": [
+   "Un mètre",
+   "Un mètre et demi",
+   "Pas de distance fixée, il suffit de ne pas le toucher"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "En agglomération, tu ne dois pas t'approcher latéralement à moins d'un mètre. Le mètre et demi vaut seulement hors agglomération, et « ne pas toucher » ne suffit pas.",
+  "source": {
+   "article": "R. 414-4",
+   "quote": "Il ne doit pas en tout cas s'en approcher latéralement à moins d'un mètre en agglomération",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842216/2026-10-27"
+  }
+ },
+ {
+  "id": "q18",
+  "theme": "vitesse",
+  "question": "Il y a du brouillard, tu ne vois qu'à 30 mètres, sur autoroute. Quelle est la vitesse maximale ?",
+  "options": [
+   "130 km/h",
+   "110 km/h",
+   "90 km/h",
+   "50 km/h"
+  ],
+  "correct": [
+   3
+  ],
+  "explanation": "Quand la visibilité est inférieure à 50 mètres, la limite tombe à 50 km/h sur tout le réseau routier et autoroutier. Les limites habituelles de 130 ou 110 ne s'appliquent plus.",
+  "source": {
+   "article": "R. 413-4",
+   "quote": "En cas de visibilité inférieure à 50 mètres, les vitesses maximales sont abaissées à 50 km/h sur l'ensemble des réseaux routier et autoroutier.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842181/2026-10-27"
+  }
+ },
+ {
+  "id": "q19",
+  "theme": "arrêt et stationnement",
+  "question": "Peut-on garer sa voiture en empiétant sur un passage pour piétons ?",
+  "options": [
+   "Oui, si tu laisses une place libre",
+   "Non, c'est interdit",
+   "Oui, pour quelques minutes seulement"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Le texte interdit tout arrêt ou stationnement qui empiète sur un passage prévu pour les piétons. Il ne prévoit aucune tolérance de distance ou de durée.",
+  "source": {
+   "article": "R. 417-5",
+   "quote": "L'arrêt ou le stationnement d'un véhicule empiétant sur un passage prévu à l'intention des piétons est interdit.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000030851516/2026-10-27"
+  }
+ },
+ {
+  "id": "q20",
+  "theme": "priorités",
+  "question": "Un véhicule d'intérêt général prioritaire, comme un véhicule de secours en intervention, annonce son approche avec ses avertisseurs spéciaux. Que fais-tu ?",
+  "options": [
+   "J'accélère pour le laisser passer derrière moi",
+   "Je lui cède le passage, dans toutes les circonstances",
+   "Rien : il doit attendre que la voie soit libre"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Le texte oblige à céder le passage à ces véhicules dans toutes les circonstances, dès qu'ils annoncent leur approche avec leurs avertisseurs spéciaux. Accélérer ou attendre sans céder ne sont pas permis.",
+  "source": {
+   "article": "R. 415-12",
+   "quote": "En toutes circonstances, tout conducteur est tenu de céder le passage aux véhicules d'intérêt général prioritaires annonçant leur approche par l'emploi des avertisseurs spéciaux",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842252/2026-10-27"
+  }
+ },
+ {
+  "id": "q21",
+  "theme": "alcool et stupéfiants",
+  "question": "Tu as ton permis depuis cinq ans. Tu as conduit avec 0,60 g d'alcool par litre de sang, et l'infraction est établie. Combien de points perds-tu ?",
+  "options": [
+   "3 points",
+   "6 points",
+   "12 points",
+   "Aucun point"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "À ce taux, c'est une contravention de quatrième classe qui retire six points de plein droit. Le délit, lui, commence à 0,80 g par litre.",
+  "source": {
+   "article": "R. 234-1",
+   "quote": "Cette contravention donne lieu de plein droit à la réduction de six points du permis de conduire.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000038954545/2026-10-27"
+  }
+ },
+ {
+  "id": "q22",
+  "theme": "téléphone et attention",
+  "question": "Tu roules avec un objet opaque posé sur la vitre avant, qui gêne ta vue. Est-ce permis ?",
+  "options": [
+   "Oui, si tu ne regardes jamais l'objet",
+   "Oui, si tu roules prudemment",
+   "Non, la vue du conducteur ne doit pas être réduite par des objets non transparents posés sur les vitres"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Le champ de vision ne doit pas être réduit par des objets non transparents sur les vitres. Ni la prudence ni le fait de ne pas regarder l'objet ne rendent la situation permise.",
+  "source": {
+   "article": "R. 412-6",
+   "quote": "être réduits par le nombre ou la position des passagers, par les objets transportés ou par l'apposition d'objets non transparents sur les vitres",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000019277061/2026-10-27"
+  }
+ },
+ {
+  "id": "q23",
+  "theme": "ceinture et enfants",
+  "question": "Tu conduis une voiture avec un passager de 16 ans à l'arrière. Que dois-tu vérifier ?",
+  "options": [
+   "Rien, c'est à lui de décider à partir de 16 ans",
+   "Qu'il est maintenu par une ceinture ou un système homologué de retenue pour enfant",
+   "Rien, l'obligation ne concerne que les moins de 10 ans"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Le conducteur doit s'assurer que tout passager de moins de 18 ans est maintenu, par une ceinture ou un système homologué. La limite est 18 ans, et non 10 ni 16.",
+  "source": {
+   "article": "R. 412-2",
+   "quote": "doit s'assurer que tout passager âgé de moins de dix-huit ans qu'il transporte est maintenu soit par un système homologué de retenue pour enfant, soit par une ceinture de sécurité",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842111/2026-10-27"
+  }
+ },
+ {
+  "id": "q24",
+  "theme": "priorités",
+  "question": "Une intersection est signalée par un stop. Que dois-tu faire avant de t'engager ?",
+  "options": [
+   "Ralentir sans t'arrêter si personne n'arrive",
+   "Marquer un temps d'arrêt puis céder le passage",
+   "Passer si la route est vide"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Au stop, le texte impose de marquer un temps d'arrêt à la limite de la chaussée, puis de céder le passage. Ralentir ou passer sur une route vide ne suffit pas.",
+  "source": {
+   "article": "R. 415-6",
+   "quote": "A certaines intersections indiquées par une signalisation dite stop, tout conducteur doit marquer un temps d'arrêt à la limite de la chaussée abordée.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842245/2026-10-27"
+  }
+ },
+ {
+  "id": "q25",
+  "theme": "arrêt et stationnement",
+  "question": "Tu veux t'arrêter près d'une intersection, là où la visibilité est insuffisante. Comment le texte qualifie-t-il cet arrêt ?",
+  "options": [
+   "Dangereux",
+   "Autorisé si la voiture reste sur le côté de la route",
+   "Autorisé tant que tu ne gênes personne"
+  ],
+  "correct": [
+   0
+  ],
+  "explanation": "Le texte cite l'arrêt et le stationnement près des intersections, quand la visibilité est insuffisante, parmi les cas dangereux. Rester sur le côté ou ne gêner personne ne change pas cette qualification.",
+  "source": {
+   "article": "R. 417-9",
+   "quote": "Sont notamment considérés comme dangereux, lorsque la visibilité est insuffisante, l'arrêt et le stationnement à proximité des intersections de routes, des virages, des sommets de côte et des passages à niveau.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842293/2026-10-27"
+  }
+ },
+ {
+  "id": "q26",
+  "theme": "vitesse",
+  "question": "Tu as ton permis depuis quatre mois. Sur autoroute où la limite normale est de 130 km/h, quelle est ta vitesse maximale ?",
+  "options": [
+   "130 km/h",
+   "120 km/h",
+   "110 km/h",
+   "100 km/h"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Pendant le délai probatoire (trois ans, deux ans après une conduite accompagnée), la limite sur ces sections est 110 km/h. Le 130 vaut hors délai probatoire, et le 100 concerne les sections à limite plus basse et les routes à deux chaussées.",
+  "source": {
+   "article": "R. 413-5",
+   "quote": "110 km/ h sur les sections d'autoroutes où la limite normale est de 130 km/ h",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842183/2026-10-27"
+  }
+ },
+ {
+  "id": "q27",
+  "theme": "feux",
+  "question": "Un feu jaune fixe s'allume et tu peux t'arrêter en toute sécurité. Que dois-tu faire ?",
+  "options": [
+   "Accélérer pour passer avant le rouge",
+   "T'arrêter devant le feu",
+   "Continuer à la même allure, le jaune veut dire ralentir"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Devant un jaune fixe, tu dois t'arrêter, sauf si tu ne peux plus le faire en sécurité. Accélérer pour passer, ou continuer comme si le jaune voulait dire ralentir, est contraire au texte.",
+  "source": {
+   "article": "R. 412-31",
+   "quote": "Tout conducteur doit marquer l'arrêt devant un feu de signalisation jaune fixe, sauf dans le cas où, lors de l'allumage dudit feu, le conducteur ne peut plus arrêter son véhicule dans des conditions de sécurité suffisantes",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842154/2026-10-27"
+  }
+ },
+ {
+  "id": "q28",
+  "theme": "alcool et stupéfiants",
+  "question": "Tu conduis après avoir pris une substance classée comme stupéfiant, et une analyse le prouve. Quelle peine est prévue ?",
+  "options": [
+   "Une simple contravention",
+   "Un retrait de points seulement",
+   "3 ans d'emprisonnement et 9 000 € d'amende"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Conduire après usage de stupéfiants, prouvé par une analyse, est un délit puni de trois ans d'emprisonnement et de 9 000 € d'amende. La contravention et le seul retrait de points ne correspondent pas à cette infraction.",
+  "source": {
+   "article": "L. 235-1",
+   "quote": "qu'elle a fait usage de substances ou plantes classées comme stupéfiants est punie de trois ans d'emprisonnement et de 9 000 euros d'amende",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000054724851/2026-10-27"
+  }
+ },
+ {
+  "id": "q29",
+  "theme": "arrêt et stationnement",
+  "question": "Ta voiture reste 8 jours au même endroit sur la voie publique, sans bouger. Est-ce abusif ?",
+  "options": [
+   "Non, il n'y a pas de limite",
+   "Oui, plus de 7 jours au même endroit",
+   "Non, tant qu'elle est en règle"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Un stationnement ininterrompu de plus de sept jours au même point de la voie publique est considéré comme abusif. « Pas de limite » et « en règle » sont faux.",
+  "source": {
+   "article": "R. 417-12",
+   "quote": "Est considéré comme abusif le stationnement ininterrompu d'un véhicule en un même point de la voie publique ou de ses dépendances, pendant une durée excédant sept jours",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842300/2026-10-27"
+  }
+ },
+ {
+  "id": "q30",
+  "theme": "ceinture et enfants",
+  "question": "Un enfant de 6 ans peut-il s'asseoir sur le siège avant, à côté du conducteur ?",
+  "options": [
+   "Oui, si son siège est reculé",
+   "En principe non, sauf cas prévus par le texte",
+   "Oui, toujours, avec une ceinture"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Sous 10 ans, le transport sur un siège avant est interdit, sauf cas prévus, par exemple si le siège arrière n'a pas de ceinture. Reculer le siège ou attacher l'enfant ne suffit pas.",
+  "source": {
+   "article": "R. 412-3",
+   "quote": "Le transport d'un enfant de moins de dix ans sur un siège avant d'un véhicule à moteur est interdit, sauf dans l'un des cas suivants",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842114/2026-10-27"
+  }
+ },
+ {
+  "id": "q31",
+  "theme": "distances et dépassement",
+  "question": "Un véhicule devant toi a signalé qu'il va tourner à gauche. Tu veux le dépasser. Par quel côté ?",
+  "options": [
+   "Par la gauche, c'est la règle",
+   "Par la droite",
+   "Peu importe, si la route est dégagée"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Les dépassements se font en principe à gauche, mais un véhicule qui a signalé qu'il va tourner à gauche se dépasse par la droite. « Peu importe » est faux, car le texte impose le côté.",
+  "source": {
+   "article": "R. 414-6",
+   "quote": "Par exception à cette règle, tout conducteur doit dépasser par la droite : 1° Un véhicule dont le conducteur a signalé qu'il se disposait à changer de direction vers la gauche",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842219/2026-10-27"
+  }
+ },
+ {
+  "id": "q32",
+  "theme": "priorités",
+  "question": "Quand dois-tu céder le passage à un piéton ? (Plusieurs réponses sont possibles.)",
+  "options": [
+   "Quand il s'engage régulièrement dans la traversée de la chaussée",
+   "Quand il montre clairement qu'il veut traverser",
+   "Uniquement quand il est déjà au milieu de la chaussée"
+  ],
+  "correct": [
+   0,
+   1
+  ],
+  "explanation": "Tu dois céder le passage dès que le piéton s'engage régulièrement ou montre clairement son intention de traverser, au besoin en t'arrêtant. Attendre qu'il soit au milieu de la chaussée est trop tard.",
+  "source": {
+   "article": "R. 415-11",
+   "quote": "Tout conducteur est tenu de céder le passage, au besoin en s'arrêtant, au piéton s'engageant régulièrement dans la traversée d'une chaussée ou manifestant clairement l'intention de le faire",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000037411323/2026-10-27"
+  }
+ },
+ {
+  "id": "q33",
+  "theme": "feux",
+  "question": "Hors agglomération, il pleut fort, de jour, et la visibilité est réduite. Quels feux doit-on allumer ?",
+  "options": [
+   "Les feux de route",
+   "Les feux de croisement",
+   "Aucun feu, c'est le jour"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Quand la visibilité est réduite par les conditions atmosphériques, les feux de croisement doivent être allumés, à l'exclusion des feux de route. Le fait qu'il fasse jour ne dispense pas de les allumer.",
+  "source": {
+   "article": "R. 416-6",
+   "quote": "doivent circuler avec le ou leurs feux de croisement allumés, à l'exclusion des feux de route",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842262/2026-10-27"
+  }
+ },
+ {
+  "id": "q34",
+  "theme": "permis et points",
+  "question": "Tu n'es plus en délai probatoire. Tu as payé une amende de quatrième classe qui t'a retiré 3 points. Combien de temps sans nouvelle infraction avec retrait de points faut-il pour retrouver le maximum de points ?",
+  "options": [
+   "6 mois",
+   "2 ans",
+   "3 ans",
+   "10 ans"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Le délai normal est de deux ans, porté à trois ans après un délit ou une contravention de quatrième ou cinquième classe. Les 6 mois valent pour une infraction qui retire un seul point.",
+  "source": {
+   "article": "L. 223-6",
+   "quote": "Le délai de deux ans mentionné au premier alinéa est porté à trois ans si l'une des infractions ayant entraîné un retrait de points est un délit ou une contravention de la quatrième ou de la cinquième classe.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000023718484/2026-10-27"
+  }
+ },
+ {
+  "id": "q35",
+  "theme": "permis et points",
+  "question": "Tu as eu ton permis il y a trois ans, sans infraction avec retrait de points. Combien de points as-tu ?",
+  "options": [
+   "6 points",
+   "9 points",
+   "12 points"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Sans infraction avec retrait de points, le permis gagne 2 points par année probatoire : 6, 8, 10, puis 12 à la fin des trois ans.",
+  "source": {
+   "article": "R. 223-1",
+   "quote": "le permis de conduire est affecté du nombre maximal de douze points.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000037302633/2026-10-27"
+  }
+ },
+ {
+  "id": "q36",
+  "theme": "vitesse",
+  "question": "Tu roules à 85 km/h dans une zone limitée à 50 km/h. Combien de points perds-tu ?",
+  "options": [
+   "1 point",
+   "2 points",
+   "3 points",
+   "4 points"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Un dépassement de 35 km/h se situe entre 30 et 40 km/h, ce qui retire trois points. Quatre points concernent un dépassement de 40 à moins de 50 km/h.",
+  "source": {
+   "article": "R. 413-14",
+   "quote": "En cas de dépassement de la vitesse maximale autorisée compris entre 30 km/h et moins de 40 km/h, réduction de trois points",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000048533039/2026-10-27"
+  }
+ },
+ {
+  "id": "q37",
+  "theme": "alcool et stupéfiants",
+  "question": "Tu accompagnes un élève conducteur (conduite accompagnée) et tu as 0,80 g d'alcool par litre de sang. Les mêmes règles s'appliquent-elles à toi ?",
+  "options": [
+   "Non, seul l'élève conducteur est concerné",
+   "Oui, les mêmes règles s'appliquent à l'accompagnateur",
+   "Non, si c'est l'élève qui tient le volant"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Le texte précise que ses dispositions s'appliquent à l'accompagnateur d'un élève conducteur. Le fait que l'élève tienne le volant ne sort pas l'accompagnateur de la règle.",
+  "source": {
+   "article": "L. 234-1",
+   "quote": "Les dispositions du présent article sont applicables à l'accompagnateur d'un élève conducteur.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000054724895/2026-10-27"
+  }
+ },
+ {
+  "id": "q38",
+  "theme": "téléphone et attention",
+  "question": "Tu es contrôlé en train de tenir ton téléphone en roulant. Combien de points peux-tu perdre pour cette infraction ?",
+  "options": [
+   "1 point",
+   "3 points",
+   "6 points",
+   "12 points"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Le texte prévoit une réduction de trois points pour cette infraction. Les 12 points du maximum ne sont pas perdus pour un seul usage du téléphone.",
+  "source": {
+   "article": "R. 412-6-1",
+   "quote": "Cette contravention donne lieu de plein droit à la réduction de trois points du permis de conduire.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000041910422/2026-10-27"
+  }
+ },
+ {
+  "id": "q39",
+  "theme": "ceinture et enfants",
+  "question": "Tu es le conducteur et tu ne mets pas ta propre ceinture. Combien de points perds-tu ?",
+  "options": [
+   "0 point",
+   "1 point",
+   "3 points",
+   "6 points"
+  ],
+  "correct": [
+   2
+  ],
+  "explanation": "Quand c'est le conducteur qui ne porte pas sa ceinture, le texte prévoit une réduction de trois points. Ce retrait ne s'applique pas quand c'est un passager qui ne la porte pas.",
+  "source": {
+   "article": "R. 412-1",
+   "quote": "Lorsque cette contravention est commise par le conducteur, elle donne lieu de plein droit à la réduction de trois points du permis de conduire.",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000037411287/2026-10-27"
+  }
+ },
+ {
+  "id": "q40",
+  "theme": "arrêt et stationnement",
+  "question": "En agglomération, dans une rue à double sens, sans indication contraire, de quel côté se gare-t-on ?",
+  "options": [
+   "Du côté gauche",
+   "Du côté droit",
+   "Du côté qu'on préfère"
+  ],
+  "correct": [
+   1
+  ],
+  "explanation": "Sur une chaussée à double sens, le stationnement se fait du côté droit, sauf si l'autorité locale décide autrement. Le côté gauche et le choix libre sont faux.",
+  "source": {
+   "article": "R. 417-1",
+   "quote": "Pour les chaussées à double sens, sur le côté droit de celles-ci, sauf dispositions différentes prises par l'autorité investie du pouvoir de police",
+   "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000030851510/2026-10-27"
+  }
+ }
+];
