@@ -251,19 +251,19 @@ window.QUESTIONS = [
  {
   "id": "q14",
   "theme": "distances et dépassement",
-  "question": "Hors agglomération, un camion de plus de 3,5 tonnes suit un autre poids lourd à la même vitesse. Quelle distance minimum doit-il garder ?",
+  "question": "Tu roules plus vite que tout à l'heure, derrière la même voiture. Que devient ta distance de sécurité ?",
   "options": [
-   "Deux secondes, comme pour une voiture",
-   "Au moins 50 mètres",
-   "Au moins 20 mètres"
+   "Elle doit être plus grande",
+   "Elle reste la même",
+   "Elle peut être plus courte, car tu réagis plus vite"
   ],
   "correct": [
-   1
+   0
   ],
-  "explanation": "Pour les véhicules de plus de 3,5 tonnes ou de plus de 7 mètres qui se suivent à la même vitesse hors agglomération, la distance est d'au moins 50 mètres. La règle des deux secondes ne suffit pas pour eux.",
+  "explanation": "Plus tu roules vite, plus la distance de sécurité doit être grande. Rouler vite ne fait pas réagir plus vite, et la distance parcourue pendant ton temps de réaction augmente avec la vitesse.",
   "source": {
    "article": "R. 412-12",
-   "quote": "la distance de sécurité mentionnée au I est d'au moins 50 mètres.",
+   "quote": "Cette distance est d'autant plus grande que la vitesse est plus élevée.",
    "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000051682619/2026-10-27"
   }
  },
