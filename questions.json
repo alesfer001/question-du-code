@@ -24,12 +24,12 @@
     "theme": "alcool et stupéfiants",
     "question": "Tu as ton permis depuis un an. Tu conduis avec 0,30 g d'alcool par litre de sang. Est-ce une infraction ?",
     "options": [
-      "Non, la limite est de 0,50 g par litre",
       "Oui, c'est une contravention",
-      "Non, seul le délit à partir de 0,80 g compte"
+      "Non, seul le délit à partir de 0,80 g compte",
+      "Non, la limite est de 0,50 g par litre"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Pendant le délai probatoire (trois ans après le permis, deux ans après une conduite accompagnée), le seuil est de 0,20 g par litre. Le 0,50 vaut pour les autres conducteurs, et le délit commence à 0,80.",
     "source": {
@@ -43,13 +43,13 @@
     "theme": "vitesse",
     "question": "Hors agglomération, sur une route ordinaire sans panneau particulier, quelle est la vitesse maximale ?",
     "options": [
-      "70 km/h",
       "80 km/h",
       "90 km/h",
+      "70 km/h",
       "110 km/h"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Sur les autres routes hors agglomération, la limite est 80 km/h. Le 90 km/h ne vaut que sur des sections signalées avec au moins deux voies dans le même sens, et le 110 km/h concerne les routes à deux chaussées séparées par un terre-plein.",
     "source": {
@@ -82,12 +82,12 @@
     "theme": "priorités",
     "question": "Deux routes se croisent, sans panneau ni feu. Qui passe en premier ?",
     "options": [
+      "Le plus rapide des deux",
       "Celui qui vient de la gauche",
-      "Celui qui vient de la droite",
-      "Le plus rapide des deux"
+      "Celui qui vient de la droite"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Sans signalisation, le conducteur qui vient de la gauche doit céder le passage à celui qui vient de la droite. La vitesse ne donne aucune priorité.",
     "source": {
@@ -101,11 +101,11 @@
     "theme": "téléphone et attention",
     "question": "Tu roules et tu tiens ton téléphone en main pour lire un message. Est-ce permis ?",
     "options": [
-      "Oui, si le message est court",
-      "Non, l'usage d'un téléphone tenu en main en circulation est interdit"
+      "Non, l'usage d'un téléphone tenu en main en circulation est interdit",
+      "Oui, si le message est court"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Le texte interdit l'usage d'un téléphone tenu en main par le conducteur d'un véhicule en circulation, sans exception de durée. Un message court ne rend pas la pratique permise.",
     "source": {
@@ -119,12 +119,12 @@
     "theme": "feux",
     "question": "Un feu de signalisation rouge clignote. Que dois-tu faire ?",
     "options": [
-      "Passer prudemment, puisqu'il clignote",
       "T'arrêter comme devant un feu rouge fixe",
-      "Ralentir et passer si personne ne vient"
+      "Ralentir et passer si personne ne vient",
+      "Passer prudemment, puisqu'il clignote"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Un rouge clignotant impose l'arrêt absolu, comme un rouge fixe. Passer prudemment ou ralentir sans s'arrêter sont interdits par le texte.",
     "source": {
@@ -138,12 +138,12 @@
     "theme": "arrêt et stationnement",
     "question": "Tu laisses ta voiture en double file et tu pars à pied déposer un colis. Comment le texte qualifie-t-il ce stationnement ?",
     "options": [
+      "Il est autorisé pour moins de 5 minutes",
       "Il est autorisé si tes feux de détresse sont allumés",
-      "Il est considéré comme gênant",
-      "Il est autorisé pour moins de 5 minutes"
+      "Il est considéré comme gênant"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Le texte range le stationnement en double file parmi les cas gênants pour la circulation publique. Les exceptions visent les deux-roues et les engins de déplacement personnel, pas les voitures, et il ne prévoit ni durée ni tolérance avec les feux de détresse.",
     "source": {
@@ -158,11 +158,11 @@
     "question": "Quand deux voitures se suivent, quelle distance de sécurité faut-il garder ?",
     "options": [
       "Une seconde",
-      "Au moins deux secondes",
-      "Environ 10 mètres, quelle que soit la vitesse"
+      "Environ 10 mètres, quelle que soit la vitesse",
+      "Au moins deux secondes"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "La distance correspond à au moins deux secondes de trajet, et elle augmente avec la vitesse. Dix mètres fixes seraient trop courts à vitesse élevée.",
     "source": {
@@ -176,12 +176,12 @@
     "theme": "permis et points",
     "question": "Au moment où tu obtiens ton permis, combien de points as-tu ?",
     "options": [
-      "12 points",
       "6 points",
-      "3 points"
+      "3 points",
+      "12 points"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Le permis démarre à 6 points, la moitié du maximum de 12. Il gagne ensuite des points chaque année probatoire sans infraction avec retrait.",
     "source": {
@@ -195,12 +195,12 @@
     "theme": "alcool et stupéfiants",
     "question": "Un conducteur a 0,80 g d'alcool par litre de sang, sans signe visible d'ivresse. Que risque-t-il ?",
     "options": [
-      "Rien, car il n'est pas ivre",
+      "Un délit : 3 ans d'emprisonnement et 9 000 € d'amende",
       "Une simple contravention",
-      "Un délit : 3 ans d'emprisonnement et 9 000 € d'amende"
+      "Rien, car il n'est pas ivre"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Le délit existe même sans signe visible d'ivresse, dès 0,80 g par litre de sang. Ni le « rien » ni la simple contravention ne correspondent à ce taux.",
     "source": {
@@ -214,9 +214,9 @@
     "theme": "feux",
     "question": "Tu es à l'arrêt en ville, la nuit. Peux-tu laisser tes feux de route allumés ?",
     "options": [
-      "Oui, c'est plus visible",
+      "Oui, si la rue est vide",
       "Non, les feux de route sont interdits à l'arrêt ou en stationnement",
-      "Oui, si la rue est vide"
+      "Oui, c'est plus visible"
     ],
     "correct": [
       1
@@ -233,12 +233,12 @@
     "theme": "priorités",
     "question": "Tu arrives à un rond-point et une voiture circule déjà dessus. Qui passe en premier ?",
     "options": [
+      "Celui qui roule le plus vite",
       "Toi, car tu arrives par sa droite",
-      "La voiture qui circule déjà sur le rond-point",
-      "Celui qui roule le plus vite"
+      "La voiture qui circule déjà sur le rond-point"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "En abordant un carrefour à sens giratoire, tu dois céder le passage aux usagers qui circulent sur l'anneau. La priorité à droite ne joue pas ici.",
     "source": {
@@ -252,12 +252,12 @@
     "theme": "distances et dépassement",
     "question": "Tu roules plus vite que tout à l'heure, derrière la même voiture. Que devient ta distance de sécurité ?",
     "options": [
-      "Elle doit être plus grande",
       "Elle reste la même",
-      "Elle peut être plus courte, car tu réagis plus vite"
+      "Elle peut être plus courte, car tu réagis plus vite",
+      "Elle doit être plus grande"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Plus tu roules vite, plus la distance de sécurité doit être grande. Rouler vite ne fait pas réagir plus vite, et la distance parcourue pendant ton temps de réaction augmente avec la vitesse.",
     "source": {
@@ -272,11 +272,11 @@
     "question": "Pendant ton délai probatoire, tu commets une infraction qui retire 3 points. Qu'est-ce qui t'attend ?",
     "options": [
       "Rien, 3 points ne suffisent pas à une obligation",
-      "Suivre la formation spécifique dans un délai de 4 mois",
-      "Une suspension immédiate du permis"
+      "Une suspension immédiate du permis",
+      "Suivre la formation spécifique dans un délai de 4 mois"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Une infraction qui retire au moins 3 points pendant le délai probatoire oblige à suivre la formation spécifique dans les 4 mois. Ne pas le faire est une contravention.",
     "source": {
@@ -329,12 +329,12 @@
     "question": "Il y a du brouillard, tu ne vois qu'à 30 mètres, sur autoroute. Quelle est la vitesse maximale ?",
     "options": [
       "130 km/h",
-      "110 km/h",
       "90 km/h",
-      "50 km/h"
+      "50 km/h",
+      "110 km/h"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "Quand la visibilité est inférieure à 50 mètres, la limite tombe à 50 km/h sur tout le réseau routier et autoroutier. Les limites habituelles de 130 ou 110 ne s'appliquent plus.",
     "source": {
@@ -348,12 +348,12 @@
     "theme": "arrêt et stationnement",
     "question": "Peut-on garer sa voiture en empiétant sur un passage pour piétons ?",
     "options": [
+      "Oui, pour quelques minutes seulement",
       "Oui, si tu laisses une place libre",
-      "Non, c'est interdit",
-      "Oui, pour quelques minutes seulement"
+      "Non, c'est interdit"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Le texte interdit tout arrêt ou stationnement qui empiète sur un passage prévu pour les piétons. Il ne prévoit aucune tolérance de distance ou de durée.",
     "source": {
@@ -367,9 +367,9 @@
     "theme": "priorités",
     "question": "Un véhicule d'intérêt général prioritaire, comme un véhicule de secours en intervention, annonce son approche avec ses avertisseurs spéciaux. Que fais-tu ?",
     "options": [
-      "J'accélère pour le laisser passer derrière moi",
+      "Rien : il doit attendre que la voie soit libre",
       "Je lui cède le passage, dans toutes les circonstances",
-      "Rien : il doit attendre que la voie soit libre"
+      "J'accélère pour le laisser passer derrière moi"
     ],
     "correct": [
       1
@@ -387,12 +387,12 @@
     "question": "Tu as ton permis depuis cinq ans. Tu as conduit avec 0,60 g d'alcool par litre de sang, et l'infraction est établie. Combien de points perds-tu ?",
     "options": [
       "3 points",
-      "6 points",
       "12 points",
-      "Aucun point"
+      "Aucun point",
+      "6 points"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "À ce taux, c'est une contravention de quatrième classe qui retire six points de plein droit. Le délit, lui, commence à 0,80 g par litre.",
     "source": {
@@ -406,12 +406,12 @@
     "theme": "téléphone et attention",
     "question": "Tu roules avec un objet opaque posé sur la vitre avant, qui gêne ta vue. Est-ce permis ?",
     "options": [
-      "Oui, si tu ne regardes jamais l'objet",
       "Oui, si tu roules prudemment",
-      "Non, la vue du conducteur ne doit pas être réduite par des objets non transparents posés sur les vitres"
+      "Non, la vue du conducteur ne doit pas être réduite par des objets non transparents posés sur les vitres",
+      "Oui, si tu ne regardes jamais l'objet"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Le champ de vision ne doit pas être réduit par des objets non transparents sur les vitres. Ni la prudence ni le fait de ne pas regarder l'objet ne rendent la situation permise.",
     "source": {
@@ -425,12 +425,12 @@
     "theme": "ceinture et enfants",
     "question": "Tu conduis une voiture avec un passager de 16 ans à l'arrière. Que dois-tu vérifier ?",
     "options": [
-      "Rien, c'est à lui de décider à partir de 16 ans",
       "Qu'il est maintenu par une ceinture ou un système homologué de retenue pour enfant",
-      "Rien, l'obligation ne concerne que les moins de 10 ans"
+      "Rien, l'obligation ne concerne que les moins de 10 ans",
+      "Rien, c'est à lui de décider à partir de 16 ans"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Le conducteur doit s'assurer que tout passager de moins de 18 ans est maintenu, par une ceinture ou un système homologué. La limite est 18 ans, et non 10 ni 16.",
     "source": {
@@ -444,12 +444,12 @@
     "theme": "priorités",
     "question": "Une intersection est signalée par un stop. Que dois-tu faire avant de t'engager ?",
     "options": [
+      "Passer si la route est vide",
       "Ralentir sans t'arrêter si personne n'arrive",
-      "Marquer un temps d'arrêt puis céder le passage",
-      "Passer si la route est vide"
+      "Marquer un temps d'arrêt puis céder le passage"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Au stop, le texte impose de marquer un temps d'arrêt à la limite de la chaussée, puis de céder le passage. Ralentir ou passer sur une route vide ne suffit pas.",
     "source": {
@@ -463,12 +463,12 @@
     "theme": "arrêt et stationnement",
     "question": "Tu veux t'arrêter près d'une intersection, là où la visibilité est insuffisante. Comment le texte qualifie-t-il cet arrêt ?",
     "options": [
-      "Dangereux",
       "Autorisé si la voiture reste sur le côté de la route",
-      "Autorisé tant que tu ne gênes personne"
+      "Autorisé tant que tu ne gênes personne",
+      "Dangereux"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Le texte cite l'arrêt et le stationnement près des intersections, quand la visibilité est insuffisante, parmi les cas dangereux. Rester sur le côté ou ne gêner personne ne change pas cette qualification.",
     "source": {
@@ -482,13 +482,13 @@
     "theme": "vitesse",
     "question": "Tu as ton permis depuis quatre mois. Sur autoroute où la limite normale est de 130 km/h, quelle est ta vitesse maximale ?",
     "options": [
-      "130 km/h",
-      "120 km/h",
       "110 km/h",
-      "100 km/h"
+      "100 km/h",
+      "120 km/h",
+      "130 km/h"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Pendant le délai probatoire (trois ans, deux ans après une conduite accompagnée), la limite sur ces sections est 110 km/h. Le 130 vaut hors délai probatoire, et le 100 concerne les sections à limite plus basse et les routes à deux chaussées.",
     "source": {
@@ -502,9 +502,9 @@
     "theme": "feux",
     "question": "Un feu jaune fixe s'allume et tu peux t'arrêter en toute sécurité. Que dois-tu faire ?",
     "options": [
-      "Accélérer pour passer avant le rouge",
+      "Continuer à la même allure, le jaune veut dire ralentir",
       "T'arrêter devant le feu",
-      "Continuer à la même allure, le jaune veut dire ralentir"
+      "Accélérer pour passer avant le rouge"
     ],
     "correct": [
       1
@@ -521,8 +521,8 @@
     "theme": "alcool et stupéfiants",
     "question": "Tu conduis après avoir pris une substance classée comme stupéfiant, et une analyse le prouve. Quelle peine est prévue ?",
     "options": [
-      "Une simple contravention",
       "Un retrait de points seulement",
+      "Une simple contravention",
       "3 ans d'emprisonnement et 9 000 € d'amende"
     ],
     "correct": [
@@ -540,12 +540,12 @@
     "theme": "arrêt et stationnement",
     "question": "Ta voiture reste 8 jours au même endroit sur la voie publique, sans bouger. Est-ce abusif ?",
     "options": [
-      "Non, il n'y a pas de limite",
       "Oui, plus de 7 jours au même endroit",
-      "Non, tant qu'elle est en règle"
+      "Non, tant qu'elle est en règle",
+      "Non, il n'y a pas de limite"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Un stationnement ininterrompu de plus de sept jours au même point de la voie publique est considéré comme abusif. « Pas de limite » et « en règle » sont faux.",
     "source": {
@@ -597,13 +597,13 @@
     "theme": "priorités",
     "question": "Quand dois-tu céder le passage à un piéton ? (Plusieurs réponses sont possibles.)",
     "options": [
-      "Quand il s'engage régulièrement dans la traversée de la chaussée",
       "Quand il montre clairement qu'il veut traverser",
-      "Uniquement quand il est déjà au milieu de la chaussée"
+      "Uniquement quand il est déjà au milieu de la chaussée",
+      "Quand il s'engage régulièrement dans la traversée de la chaussée"
     ],
     "correct": [
       0,
-      1
+      2
     ],
     "explanation": "Tu dois céder le passage dès que le piéton s'engage régulièrement ou montre clairement son intention de traverser, au besoin en t'arrêtant. Attendre qu'il soit au milieu de la chaussée est trop tard.",
     "source": {
@@ -636,13 +636,13 @@
     "theme": "permis et points",
     "question": "Tu n'es plus en délai probatoire. Tu as payé une amende de quatrième classe qui t'a retiré 3 points. Combien de temps sans nouvelle infraction avec retrait de points faut-il pour retrouver le maximum de points ?",
     "options": [
+      "10 ans",
       "6 mois",
       "2 ans",
-      "3 ans",
-      "10 ans"
+      "3 ans"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Le délai normal est de deux ans, porté à trois ans après un délit ou une contravention de quatrième ou cinquième classe. Les 6 mois valent pour une infraction qui retire un seul point.",
     "source": {
@@ -657,11 +657,11 @@
     "question": "Tu as eu ton permis il y a trois ans, sans infraction avec retrait de points. Combien de points as-tu ?",
     "options": [
       "6 points",
-      "9 points",
-      "12 points"
+      "12 points",
+      "9 points"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Sans infraction avec retrait de points, le permis gagne 2 points par année probatoire : 6, 8, 10, puis 12 à la fin des trois ans.",
     "source": {
@@ -677,11 +677,11 @@
     "options": [
       "1 point",
       "2 points",
-      "3 points",
-      "4 points"
+      "4 points",
+      "3 points"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Un dépassement de 35 km/h se situe entre 30 et 40 km/h, ce qui retire trois points. Quatre points concernent un dépassement de 40 à moins de 50 km/h.",
     "source": {
@@ -695,9 +695,9 @@
     "theme": "alcool et stupéfiants",
     "question": "Tu accompagnes un élève conducteur (conduite accompagnée) et tu as 0,80 g d'alcool par litre de sang. Les mêmes règles s'appliquent-elles à toi ?",
     "options": [
-      "Non, seul l'élève conducteur est concerné",
+      "Non, si c'est l'élève qui tient le volant",
       "Oui, les mêmes règles s'appliquent à l'accompagnateur",
-      "Non, si c'est l'élève qui tient le volant"
+      "Non, seul l'élève conducteur est concerné"
     ],
     "correct": [
       1
@@ -714,13 +714,13 @@
     "theme": "téléphone et attention",
     "question": "Tu es contrôlé en train de tenir ton téléphone en roulant. Combien de points peux-tu perdre pour cette infraction ?",
     "options": [
-      "1 point",
       "3 points",
+      "12 points",
       "6 points",
-      "12 points"
+      "1 point"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Le texte prévoit une réduction de trois points pour cette infraction. Les 12 points du maximum ne sont pas perdus pour un seul usage du téléphone.",
     "source": {
@@ -735,12 +735,12 @@
     "question": "Tu es le conducteur et tu ne mets pas ta propre ceinture. Combien de points perds-tu ?",
     "options": [
       "0 point",
-      "1 point",
       "3 points",
-      "6 points"
+      "6 points",
+      "1 point"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Quand c'est le conducteur qui ne porte pas sa ceinture, le texte prévoit une réduction de trois points. Ce retrait ne s'applique pas quand c'est un passager qui ne la porte pas.",
     "source": {
