@@ -46,6 +46,9 @@ button { font: inherit; }
 .theme { margin: 0 0 6px; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--amber); font-weight: 700; }
 .question { margin: 0 0 16px; font-size: 19px; line-height: 1.4; font-weight: 700; color: #fff; }
 
+/* Panneau : fond blanc pour le contraste, largeur réglée par CSS (360 px : 296 px utiles dans la carte). */
+.sign { background: #fff; border-radius: 10px; padding: 12px; margin: 0 0 16px; text-align: center; }
+.sign img { display: block; width: 100%; max-width: 220px; height: auto; margin: 0 auto; }
 .options { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
 .opt {
   width: 100%; text-align: left; min-height: 52px; padding: 12px 14px;
@@ -107,6 +110,7 @@ button { font: inherit; }
 .doc h2 { font-size: 18px; color: var(--amber); margin-top: 24px; }
 .doc p, .doc li { color: var(--text); }
 .doc a { font-weight: 700; }
+.credit { overflow-wrap: anywhere; margin: 0 0 12px; font-size: 15px; }
 .back { display: inline-block; margin: 14px 0; }
 
 @media (min-width: 640px) {

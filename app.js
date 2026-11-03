@@ -4,7 +4,12 @@
   var Q = window.QUESTIONS || [];
   var L = window.QuizLogic;
   var N = Q.length;
-  var STORE_KEY = "questduCode.v1";
+  // Réglages par page, fournis par la page avant ce fichier (window.QC_CONFIG). Par défaut : mode gratuit.
+  var CFG = window.QC_CONFIG || {};
+  var STORE_KEY = CFG.storeKey || "questduCode.v1";
+  var SIGNS = CFG.signsBase || "signs/";
+  var EXAM_MARK = CFG.examMark !== false;
+  var SHOW_CTA = CFG.showCta !== false;
   var app = document.getElementById("app");
   var state = { i: 0, answers: {}, pending: [], revealed: false, lastSel: null };
 
@@ -49,11 +54,36 @@
     return idxs.map(function (k) { return q.options[k]; }).join(" ; ");
   }
 
+  // Questions sur les panneaux : la source est l'IISR (texte cité), les autres sont des articles du Code.
+  function isSign(q) {
+    return !!(q.sign && q.sign.file);
+  }
+
+  function sourceLabel(q) {
+    if (q.source.text) return q.source.text + ", " + q.source.article + " (" + q.source.version + ")";
+    return "article " + q.source.article + " du Code de la route (édition du 27/10/2026)";
+  }
+
+  function sourceLink(q) {
+    return q.source.text ? "Ouvrir la copie de l'IISR (PDF)" : "Lire l'article " + q.source.article + " sur Légifrance";
+  }
+
+  // Image du panneau : taille gérée par le CSS seul, texte alternatif générique (le code et le sens ne sont pas donnés).
+  function signNode(q) {
+    if (!isSign(q)) return null;
+    var wrap = el("div", "sign");
+    var img = document.createElement("img");
+    img.src = SIGNS + q.sign.file;
+    img.alt = "Panneau routier";
+    wrap.appendChild(img);
+    return wrap;
+  }
+
   function sourceBlock(q) {
     var box = el("div", "source");
-    box.appendChild(el("p", "ref", "Source : article " + q.source.article + " du Code de la route (édition du 27/10/2026)"));
+    box.appendChild(el("p", "ref", "Source : " + sourceLabel(q)));
     box.appendChild(el("blockquote", "", "« " + q.source.quote + " »"));
-    var a = el("a", "", "Lire l'article " + q.source.article + " sur Légifrance");
+    var a = el("a", "", sourceLink(q));
     a.href = q.source.url;
     a.target = "_blank";
     a.rel = "noopener noreferrer";
@@ -82,6 +112,8 @@
     card.setAttribute("data-id", q.id);
     app.appendChild(renderProgress());
     card.appendChild(el("p", "theme", q.theme));
+    var sign = signNode(q);
+    if (sign) card.appendChild(sign);
     card.appendChild(el("h2", "question", q.question));
 
     var multi = q.correct.length > 1;
@@ -169,13 +201,15 @@
     var card = el("section", "card end");
     card.appendChild(el("h2", "", "Ton score"));
     card.appendChild(el("p", "score", score + " / " + N));
-    var passed = L.passed(score);
-    var marker = el("p", "marker");
-    marker.appendChild(document.createTextNode("Seuil : "));
-    marker.appendChild(el("strong", "", L.PASS_MARK + " bonnes réponses sur " + N));
-    marker.appendChild(document.createTextNode(" (seuil de l'examen du code, service-public.fr). "));
-    marker.appendChild(document.createTextNode(passed ? "Tu es au-dessus du seuil sur cet entraînement." : "Tu es sous le seuil sur cet entraînement."));
-    card.appendChild(marker);
+    if (EXAM_MARK) {
+      var passed = L.passed(score);
+      var marker = el("p", "marker");
+      marker.appendChild(document.createTextNode("Seuil : "));
+      marker.appendChild(el("strong", "", L.PASS_MARK + " bonnes réponses sur " + N));
+      marker.appendChild(document.createTextNode(" (seuil de l'examen du code, service-public.fr). "));
+      marker.appendChild(document.createTextNode(passed ? "Tu es au-dessus du seuil sur cet entraînement." : "Tu es sous le seuil sur cet entraînement."));
+      card.appendChild(marker);
+    }
     card.appendChild(el("p", "best", "Meilleur score sur cet appareil : " + best + " / " + N + "."));
 
     if (missedIds.length) {
@@ -184,11 +218,13 @@
       missedIds.forEach(function (id) {
         var q = Q.filter(function (x) { return x.id === id; })[0];
         var li = el("li");
+        var sg = signNode(q);
+        if (sg) li.appendChild(sg);
         li.appendChild(el("p", "q", q.question));
         li.appendChild(el("p", "a", "Ta réponse : " + listText(q, state.answers[q.id]) + ". Bonne réponse : " + listText(q, q.correct) + "."));
         li.appendChild(el("p", "", q.explanation));
-        var s = el("p", "src", "Article " + q.source.article + " : ");
-        var a = el("a", "", "Lire sur Légifrance");
+        var s = el("p", "src", (q.source.text ? sourceLabel(q) : "Article " + q.source.article) + " : ");
+        var a = el("a", "", q.source.text ? "Ouvrir la copie de l'IISR (PDF)" : "Lire sur Légifrance");
         a.href = q.source.url; a.target = "_blank"; a.rel = "noopener noreferrer";
         s.appendChild(a);
         li.appendChild(s);
@@ -199,7 +235,7 @@
       card.appendChild(el("p", "", "Aucune erreur sur cette série."));
     }
 
-    var restart = el("button", "btn ghost restart", "Recommencer les 40 questions");
+    var restart = el("button", "btn ghost restart", "Recommencer les " + N + " questions");
     restart.type = "button";
     restart.addEventListener("click", function () {
       state = { i: 0, answers: {}, pending: [], revealed: false, lastSel: null };
@@ -210,11 +246,11 @@
 
     var cta = el("div", "cta-block");
     var pass = el("a", "cta", "Pass complet : 4,99 €, une seule fois, sans abonnement");
-    pass.href = "#PASS_URL";
+    pass.href = "https://lesferay.gumroad.com/l/pass-question-du-code";
     cta.appendChild(pass);
-    cta.appendChild(el("p", "cta-note", "Le pass ajoute plus de questions."));
+    cta.appendChild(el("p", "cta-note", "114 questions au total, dont 24 sur les panneaux, chacune avec son article de loi."));
     // Le bouton reste caché tant que le pass n'est pas en vente.
-    if (pass.getAttribute("href").charAt(0) !== "#") card.appendChild(cta);
+    if (SHOW_CTA && pass.getAttribute("href").charAt(0) !== "#") card.appendChild(cta);
 
     app.appendChild(card);
     window.scrollTo(0, 0);
