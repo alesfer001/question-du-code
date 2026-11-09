@@ -100,6 +100,10 @@ button { font: inherit; }
   padding: 14px 16px; border-radius: 12px; background: var(--amber); color: var(--navy-3); font-weight: 700; font-size: 17px;
 }
 .cta-note { margin: 8px 0 0; font-size: 14px; color: var(--muted); text-align: center; }
+.home-line { margin: 0 0 12px; font-size: 14px; }
+.offer h2 { margin: 0 0 8px; font: 20px/1.2 var(--head); color: #fff; }
+.offer .cta-block { margin-top: 16px; }
+.offer .actions { margin-top: 14px; }
 
 .foot { background: var(--navy-3); padding: 16px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
 .foot p { margin: 0 0 8px; max-width: 680px; margin-left: auto; margin-right: auto; }

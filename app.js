@@ -10,8 +10,12 @@
   var SIGNS = CFG.signsBase || "signs/";
   var EXAM_MARK = CFG.examMark !== false;
   var SHOW_CTA = CFG.showCta !== false;
+  var PASS_URL = "https://lesferay.gumroad.com/l/pass-question-du-code";
+  // Carte d'offre affichée une fois par essai, avant la question 11 (index 10). Seulement si le bouton du pass est visible.
+  var OFFER_AT = 10;
+  var SHOW_OFFER = SHOW_CTA && PASS_URL.charAt(0) !== "#" && OFFER_AT < N;
   var app = document.getElementById("app");
-  var state = { i: 0, answers: {}, pending: [], revealed: false, lastSel: null };
+  var state = { i: 0, answers: {}, pending: [], revealed: false, lastSel: null, offerShown: false };
 
   function el(tag, cls, text) {
     var node = document.createElement(tag);
@@ -176,7 +180,9 @@
         state.revealed = false;
         state.pending = [];
         state.lastSel = null;
-        if (state.i >= N) renderEnd(); else renderQuestion();
+        if (state.i >= N) renderEnd();
+        else if (SHOW_OFFER && !state.offerShown && state.i === OFFER_AT) renderOffer();
+        else renderQuestion();
         window.scrollTo(0, 0);
       });
       nav.appendChild(next);
@@ -191,6 +197,32 @@
     state.lastSel = selected;
     state.revealed = true;
     renderQuestion();
+  }
+
+  // Carte entre la question 10 et la question 11. Ne touche ni aux réponses ni à la progression enregistrée.
+  function renderOffer() {
+    state.offerShown = true;
+    app.innerHTML = "";
+    var card = el("section", "card offer");
+    card.appendChild(el("h2", "", "Tu as fait " + OFFER_AT + " questions sur " + N + "."));
+    card.appendChild(el("p", "", "Le pass complet : 114 questions, dont 24 sur les panneaux, chacune avec sa source citée. 4,99 €, une seule fois, sans abonnement."));
+    var block = el("div", "cta-block");
+    var pass = el("a", "cta", "Voir le pass à 4,99 €");
+    pass.href = PASS_URL;
+    pass.target = "_blank";
+    pass.rel = "noopener noreferrer";
+    block.appendChild(pass);
+    card.appendChild(block);
+    var more = el("button", "btn ghost", "Continuer les questions gratuites");
+    more.type = "button";
+    more.addEventListener("click", function () {
+      renderQuestion();
+      window.scrollTo(0, 0);
+    });
+    var act = el("div", "actions");
+    act.appendChild(more);
+    card.appendChild(act);
+    app.appendChild(card);
   }
 
   function renderEnd() {
@@ -238,7 +270,7 @@
     var restart = el("button", "btn ghost restart", "Recommencer les " + N + " questions");
     restart.type = "button";
     restart.addEventListener("click", function () {
-      state = { i: 0, answers: {}, pending: [], revealed: false, lastSel: null };
+      state = { i: 0, answers: {}, pending: [], revealed: false, lastSel: null, offerShown: false };
       renderQuestion();
       window.scrollTo(0, 0);
     });
@@ -246,7 +278,7 @@
 
     var cta = el("div", "cta-block");
     var pass = el("a", "cta", "Pass complet : 4,99 €, une seule fois, sans abonnement");
-    pass.href = "https://lesferay.gumroad.com/l/pass-question-du-code";
+    pass.href = PASS_URL;
     cta.appendChild(pass);
     cta.appendChild(el("p", "cta-note", "114 questions au total, dont 24 sur les panneaux, chacune avec son article de loi."));
     // Le bouton reste caché tant que le pass n'est pas en vente.
